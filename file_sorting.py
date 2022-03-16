@@ -50,7 +50,7 @@ with open('sorted_huuuge.txt', 'w', encoding='utf-8') as file:
 
         file.write(f'{CURSOR_VALUES[current_index]}\n')
 
-        # read next value from file
+        # read next value from corresponding sorted temp file
         next_value = SORTED_FILES[current_index].readline()
         if len(next_value) != 0:  # if it is not the last line
             # update value for the file
